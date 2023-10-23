@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.8s;
+    background-color: red;
+  }
+  .nav-bar {
+    display: none;
+  }
+}

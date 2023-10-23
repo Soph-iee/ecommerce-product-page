@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="header">
+        <img src="images/logo.svg" alt="" class="logo" />
+        <nav class="nav-bar">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </nav>
+        <div class="user-bar">
+          <img src="images/icon-cart.svg" alt="" class="cart-icon" />
+          <img class="user" src="images/image-avatar.png" alt="user-avatar" />
+          <p class="items-bought display cart-icon">4</p>
+        </div>
+      </section>
+      <section class="main-container">
+        <div class="image-container">
+          <div class="main-img">
+            <img
+              src="images/image-product-1.jpg"
+              alt="footwear-image"
+              class="main-image"
+            />
+          </div>
+          <div class="img-thumbnails">
+            <img
+              src="images/image-product-1-thumbnail.jpg"
+              alt=""
+              class="small image-0"
+            />
+            <img
+              src="images/image-product-2-thumbnail.jpg"
+              alt=""
+              class="small image-1"
+            />
+            <img
+              src="images/image-product-3-thumbnail.jpg"
+              alt=""
+              class="small image-2"
+            />
+            <img
+              src="images/image-product-4-thumbnail.jpg"
+              alt=""
+              class="small image-3"
+            />
+          </div>
+        </div>
+        <div class="product-info">
+          <h5>Sneaker Company</h5>
+          <h1 class="main-header">Fall Limited Edition Sneakers</h1>
+          <p class="about-product">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <h3 class="discount-pricing">$125.00 <span>50% </span></h3>
+
+          <p class="product-pricing">$250.00</p>
+          <p class="error display">Nothing to add to cart!</p>
+          <div class="add-to-cart-btns">
+            <div class="select-btn">
+              <img src="images/icon-minus.svg" alt="" class="icon-minus" />
+              <span class="number-selected">0</span>
+              <img src="images/icon-plus.svg" alt="" class="icon-plus" />
+            </div>
+            <div class="add-to-cart">
+              <img src="images/icon-cart.svg" alt="" />
+              <span>Add to cart</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="cart-info-box display">
+      <p class="cart-header">Cart</p>
+      <p class="empty-cart-info">Your cart is empty</p>
+      <div class="cart-checkout-container display">
+        <div class="cart-checkout-box">
+          <img
+            class="icon-sneakers"
+            src="images/image-product-1-thumbnail.jpg"
+            alt=""
+          />
+          <p>
+            Fall Limited Edition Sneakers $125.00 x
+            <span id="number-selected"> 0</span>
+            <b>$<span class="price">0</span>.00</b>
+          </p>
+          <img src="images/icon-delete.svg" alt="" class="icon-delete" />
+        </div>
+
+        <div class="checkout-btn">Checkout</div>
+      </div>
+    </div>
+    <!-- the overlay and lightbulb elements -->
+    <div class="light-bulb">
+      <div class="light-main-image">
+        <img src="images/image-product-1.jpg" class="main-overlay" alt="" />
+      </div>
+      <div class="icons">
+        <img class="icon-close close" src="images/icon-close.svg" alt="" />
+        <img class="icon-next" src="images/icon-next.svg" alt="" />
+        <img class="icon-prev" src="images/icon-previous.svg" alt="" />
+      </div>
+
+      <div class="light-thumbnails">
+        <img
+          class="lightbulb-small image-0"
+          src="images/image-product-1-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          class="lightbulb-small image-1"
+          src="images/image-product-2-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          class="lightbulb-small image-2"
+          src="images/image-product-3-thumbnail.jpg"
+          alt=""
+        />
+        <img
+          class="lightbulb-small image-3"
+          src="images/image-product-4-thumbnail.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
